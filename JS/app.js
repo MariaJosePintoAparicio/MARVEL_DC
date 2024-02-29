@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             "id": "5d86371f1efebc31def272e2",
-            "about": "Batman es un héroe de DC Comics, también conocido como Bruce Wayne, que lucha contra el crimen en Ciudad Gótica. Sin poderes sobrehumanos, confía en su ingenio, habilidades físicas y tecnología avanzada para combatir a los villanos. Ha sido adaptado en numerosas películas y otros medios, convirtiéndose en un icono cultural.",
+            "about": "Batman es un héroe de DC Comics, también conocido como Bruce Wayne, que lucha contra el crimen en Ciudad Gótica. Sin poderes sobrehumanos, confía en su ingenio, habilidades físicas y tecnología avanzada para combatir a los villanos. Ha sido adaptado en numerosas películas y otros medios, convirtiéndose en un icono cultural",
             "squarePic": "images/batman.jpg",
             "name": "Batman"
         },
