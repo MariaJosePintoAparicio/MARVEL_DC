@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #2a292e;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.logo{
+  border: none;
+}
+
+
+
+img {
+  height: 300px;
+  width: 250px;
+  border-radius: 15px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+img:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+
+.busqueda{
+  padding: 10px;
+}
+
+#iBusca{
+  border: none;
+  background-color: #2a292e;
+  color: gray;
+  outline: none;
+  padding: 8px;
+  border-radius:10px;
+}
+
+.buscar{
+  padding: 6px;
+  color: black;
+  margin-left: 5px;
+  border: none;
+  background-color: #888;
+  border-radius:10px;
+}
+
+.buscar:hover{
+  background-color: red;
+  transform: translate(1.04);
+  color: white;
+
+}
+
+
+
+.contenido-marvel,
+.contenido-dc {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  text-align: center;
+  margin-top: 100px ;
+  gap: 20px;
+}
+
+h3{
+  color: white;
+}
+
+h4{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+.img-logo{
+  width: 150px;
+  height: 150px;
+}
+
+
+.boton {
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: transform 0.4s;
+  background-color: #060691;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+}
+
+
+#modal-close{
+  padding-top: 10px;
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#modal-close:hover {
+  transform: scale(1.1);
+  background-color: rgb(212, 125, 125);
+}
+
+
+@media (max-width: 1024px){
+  .contenido-marvel,
+  .contenido-dc {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+    margin-top: 100px ;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav.encabezado {
+    font-size: 5vw;
+  }
+
+  #iBusca{
+    width: 100px;
+  }
+  
+  .logo{
+    border: none;
+    width: 150px;
+    height: 150px;
+  }
+
+  .contenido-marvel,
+  .contenido-dc {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    text-align: center;
+    margin-top: 100px ;
+    gap: 20px;
+  }
+
+  .modal-content {
+    text-align: center;
+  }
+}
